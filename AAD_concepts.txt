@@ -106,7 +106,7 @@ Azure RBAC roles
 - manage access to Azure resources
 - Scope can be specified at multiple levels
 - role information can be accessed in Azure portal, Azure CLI, Az PS, Az Resource Manager templates, REST API
-
+ 
 RBAC control roles
 - Owner
 - Contributor
