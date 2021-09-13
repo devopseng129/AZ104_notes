@@ -121,9 +121,6 @@ Create admin role user
 - member user
 - guest user
 
-
-Naza6953
-
 Access management AAD 
 - Azure AD roles - manage AAD-realted resources (users, groups, billings, licensing)
 - RBAC for Azure - manage Az resources (VMs, SQL databases, storage)
