@@ -1,0 +1,11 @@
+secure_access_to_files_in_azure_files
+secure access from on-premises
+- SMB V3.0
+- disable SMB V1.0
+    Remove-WindowsFeature -Name FS-SMB1
+- port 445
+
+configure IP-based firewall rules
+require secure transfer for all connections
+enable and use AAD DS authentication
+use share snapshots to protect against accidental deletion

@@ -1,0 +1,69 @@
+Azure storage
+- storage for VMs (disks/files)
+- unstructed data (Blops/Data Lake Store)
+- structured data (Tables/Cosmos DB/Azure SQL DB)
+
+Tiers
+- standard HDD
+- premium standard
+(no conversions)
+
+Azure Storage services
+- Azure Containers Blops
+- Azure files
+- Azure Queries
+- Azure Tables
+
+Kinds of storage accounts
+- Standard general-purpose v2
+- Premium block blobs
+- Premium file shares
+- Premium page blobs
+(all encrypted with SSE - Storage Service Encryption - @rest)
+
+Replication options
+- LRS - Localy Redundant Storage
+- ZRS - Zone Redundant Storage
+- GRS/RA-GRS - Geo-Redundant storage / Read-access geo-redundant storage
+- GZRS/RA-GZRS - Geo-zone redundant storage / read-access geo-zone-redundant storage
+
+Default storage endpoints
+- container service
+- Tables service
+- queue service
+- file service
+
+Custom domain
+- Direcrt CNAME mapping
+
+CNAME record
+Target
+blobs.contoso.com
+contosoblobs.blob.core.windows.net
+
+
+- intermediary domain with asverify
+
+CNAME record
+Target
+asverify.blobs.contoso.com
+asverify.contosoblobs.blob.core.windows.net
+blobs.contoso.com
+contosoblobs.blob.core.windows.net
+
+Secure storage endpoints - firewalls and Virtual Networks (subnets)
+
+blob - public access level
+- private
+- blob
+- container
+
+blob access Tiers
+- hot
+- cold
+- archive
+
+blob types
+- block blob
+- append blob
+- page blob

@@ -1,0 +1,18 @@
+Store and share files in your app with Azure Files
+
+Data access methods
+- direct access via mounted drive 
+- Windows Server (on-prem/Azure) with Azure File Sync for synchronization
+
+File redundancy options
+- Standard performance: Double-digit ms latency, 10,000 IOPS, 300-MBps bandwidth
+- Premium performance: Single-digit ms latency, 100,000 IOPS, 5-GBps bandwidth
+
+Data migration solutions
+- AzCopy 	Command-line tool that offers the best performance, especially for a low volume of small files.
+- Robocopy 	Command-line tool shipped with Windows and Windows Server. AzCopy is written to be Azure aware and performs better.
+- Azure Storage Explorer 	Graphical file management utility that runs on Windows, Linux, and macOS.
+- Azure portal 	Use the portal to import files and folders.
+- Azure File Sync 	Can be used to do the initial data transfer, and then uninstalled after the data is transferred.
+- Azure Data Box 	If you have up to 35 TB of data and you need it imported in less than a week.
+

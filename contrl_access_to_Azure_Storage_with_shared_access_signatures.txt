@@ -1,0 +1,44 @@
+Acess Azure Storage
+- public access - anonymous client access
+- AAD - authenticate a security principal -> get OAuth 2.0 token -> Azure Storage authorization
+- Shared Key - two 512-bit access keys for every storage account that's created
+- shared access signature SAS - grant granular access to files in Azure Storage
+    user delegation SAS
+    Service SAS
+    Account SAS
+
+
+Shared Access Signatures
+- resource URI + SAS token
+- SAS token
+    sp= Controls the access rights (a for add, c for create, d for delete, l for list, r for read, or w for write.)
+    st= date and time when access starts
+    se= date and time when access ends
+    sv= version of the storage API to use
+    sr=  kind of storage being accessed
+    sig=  cryptographic signature
+
+
+Reduce the potential risks of using a SAS
+- always use HTTPS
+- the most secure SAS is a user delegation SAS
+- try to set expiration time to the smallest useful value
+- apply the rule of minimum-required privileges
+- there are some situations where a SAS isn't the correct solution
+
+SAS
+- a secure way to give access to clients without having to share your Azure credentials
+- downside - Anyone with the correct SAS can access the file while it's still valid
+
+Media for storing access policy
+- blob containers
+- file shares
+- queues
+- tables
+
+Stored access policy properties
+- identifier
+- start time
+- expiry time
+- permissions
+

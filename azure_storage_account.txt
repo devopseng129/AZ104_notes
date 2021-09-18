@@ -1,0 +1,28 @@
+azure_storage_account
+
+Primitive, cloud-based storage services
+- Azure blobs
+- Azure files
+- Azure queues
+- Azure Tables
+
+Storage account -> container - groups set of Azure storage services
+
+Storage account setting
+- subscription
+- location
+- performance
+- replication
+- access tier
+- secure transfer required
+- virtual networks
+
+Number of storage accounts needed
+- data diversity
+- cost sensitivity
+- tolerance for management overhead
+
+basic account settings
+- name
+- deployment model (ARM)
+- account kind (General-purpose v2)

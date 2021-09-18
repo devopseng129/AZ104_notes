@@ -1,0 +1,42 @@
+work_with_Azure_Storage_Explorer
+
+Azure Storage Explorer 
+- GUI app - WIN, macOS, Linux
+
+Connection types (examples)
+- Add resources by using Azure Active Directory (Azure AD)
+- Use a connection string
+- Use a shared access signature URI
+- Use a name and key
+- Attach to a local emulator
+- Attach to Azure Cosmos DB through a connection string
+- Attach to Azure Data Lake by using a URI
+
+
+Add an Azure account by using Azure AD
+- Open Storage Explorer.
+- Select the Add an Azure Account option and sign in to Azure.
+- Connect to your Azure storage account.
+- Select Add a resource via Azure AD, and then choose the Azure tenant and the associated account.
+- When you're prompted, provide the type of resource that you're connecting to.
+- Review and verify the connection details, and then select Connect.
+
+
+Connect by using a shared access signature URI
+- Open Storage Explorer.
+- Connect to your Azure storage account.
+- Select the connection type: shared access signature (SAS) URI.
+- Provide a meaningful name for the connection.
+- When you're prompted, provide the SAS URI.
+- Review and verify the connection details, and then select Connect.
+
+
+Connect by using a storage account name and key
+- pen Storage Explorer.
+- onnect to your Azure storage account.
+- elect the connection type: storage account name and key.
+- rovide a meaningful name for the connection.
+- hen you're prompted, provide the name of the storage account and either of the account keys needed to access it.
+- rom the provided list, select the storage domain that you want to use.
+- Review and verify the connection details, and then select Connect.
+

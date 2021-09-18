@@ -1,0 +1,33 @@
+Storage Security
+- Encryption - SSE
+- authentication -AAD RBAC
+- data in transit - Client=Side encryption, HTTPS, SMB 3.0
+- Shared Access Signatures
+
+Authorization options
+- AAD
+- Shared Key
+- SAS Shared access Signatures
+- Anonymous access to containers and blobs
+
+SAS
+- multiple storage services
+- interval - start time, expire time
+- permissions
+- IPs
+- protocols
+
+SSE Storage Service Encryption
+- 256b AES 
+
+Recommendations
+- Always use HTTPS to create or distribute a SAS
+- Reference stored access policies where possible. 
+- Use near-term expiration times on an unplanned SAS
+- Have clients automatically renew the SAS if necessary
+- Be careful with SAS start time
+- Be specific with the resource to be accessed.
+- Understand that your account will be billed for any usage, including that done with SAS
+- Validate data written using SAS
+- Don't assume SAS is always the correct choice.
+- Use Storage Analytics to monitor your application

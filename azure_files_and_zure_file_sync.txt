@@ -1,0 +1,34 @@
+Azure Files and Azure File Sync
+
+File Storage - SMB
+
+Azure Files - Provides an SMB interface, client libraries, and a REST interface that allows access from anywhere to stored files.
+
+Azure Blops - Provides client libraries and a REST interface that allows unstructured data to be stored and accessed at a massive scale in block blobs.
+
+Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol. Azure File shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS.
+
+Ensure port 445 is open. Azure Files uses SMB protocol. SMB communicates over TCP port 445. Also, ensure your firewall is not blocking TCP ports 445 from the client machine.
+
+Azure File Sync
+- Storage Sync Service
+- Sync Group
+- Registered Server
+- Azure File Sync agent
+    FileSyncSvc.exe 
+    StorageSync.exe 
+    PS cmdlets
+- Server Endpoint
+- Cloud Endpoint
+
+Deploy Azure File Sync
+- deploy Storage Sync Service
+- prepare Windows Server
+- Install Azure File Sync Agent
+- register Windows Server with Storage Sync Service
+
+Azure Storage Explorer
+Import/Export Service
+
+AzCopy
+azcopy copy [soource] [destination] [flags]
