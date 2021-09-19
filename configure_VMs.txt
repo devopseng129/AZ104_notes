@@ -1,0 +1,44 @@
+configure_VMs
+IaaS business scenarios
+- test and development
+- website hosting
+- storage, backup and recovery
+- high-performance computing
+- big data analysis
+- extended data center
+
+Plan VMs 
+- start with the network  (VNets)
+- name (env/location/instance/product/role)
+- location
+- size - based on type of workflow
+    series: A B D Dc E F G H L M Mv2 N
+- pricing model - compute / storage / comsumption-based / reserved VM instances
+- storage for the VM
+    Azure VM --> OS disk [C:]  // temporary disk [D: /dev/sdb] // Data disk
+    premium storage disks:
+        unamanaged disks
+        maanged disks
+- OS
+
+Create VM
+- iamge
+- basics
+- disks
+- networking
+- management
+- advanced
+
+Connect to virtual machines
+- Win-VM -> RDP
+- Lnx-VM -> SSH client
+- Azure Bastion RDP/SSH
+    connects with VMs directly via SSL
+    no need to expose RDP/SSH ports of the VMs
+
+Win Vms
+    RDP - GUI session
+    WinRM (Windows Remote Management) - command-line session
+
+Lnx VMs
+    SSH keys

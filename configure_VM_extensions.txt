@@ -1,0 +1,35 @@
+configure_VM_extensions
+
+
+
+Implement virtual machines extensions
+- small applications for post-deployment configuration and automation tasks on Azure VMs 
+
+Implement custom script extensions
+- CSE 
+- automatically launch and execute VM customization tasks post configuration
+
+Set-AzVmCustomScriptExtension -FileUri <uri> -Run "PowerShell.exe" -VmName vmName -ResourceGroupName resourceGroup -Location "location"
+
+- considerations
+    timeout
+    dependencies
+    failure events
+    sensitive data
+
+Implement desired state configuration
+- DSC 
+- management platform in Win PowerShell
+- deploying and managing configuration data for sftware services and managing their environment
+
+- configuration = script
+
+configuration IISInstall  --> configuration block
+{
+Node “localhost”           --> node block
+{
+WindowsFeature IIS          --> resource block
+{
+Ensure = “Present”
+Name = “Web-Server”
+} } }

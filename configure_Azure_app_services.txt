@@ -1,0 +1,46 @@
+configure_Azure_app_services
+
+create app service
+- name
+- publish
+- runtime stack
+- OS
+- region
+
+CI/CD
+- Azure DevOps
+- GitHub
+- Bitbucket
+
+Manually push code to Azure 
+- Git
+- CLI
+- Visual Studio
+- FTP/S 
+
+Secure an app service
+The authentication and authorization module runs in the same sandbox as your application code. When it's enabled, every incoming HTTP request passes through it before being handled by your application code.
+- Authenticates users with the specified provider.
+- Validates, stores, and refreshes tokens.
+- Manages the authenticated session.
+- Injects identity information into request headers.
+
+authorization behavior
+- allow anonymous requests (no action)
+- allow only authenticated requests (log in with)
+
+Backup and restore service 
+- app configuration
+- file content
+- database connected to the app (SQL Database, Azure Database for MySQL, Azure Database for PostgreSQL, MySQL in-app)
+
+Application Insights features
+- Request rates, response times, and failure rates - Find out which pages are most popular, at what times of day, and where your users are. See which pages perform best. If your response times and failure rates go high when there are more requests, then perhaps you have a resourcing problem.
+- Dependency rates, response times, and failure rates - Find out whether external services are slowing you down.
+- Exceptions - Analyze the aggregated statistics, or pick specific instances and drill into the stack trace and related requests. Both server and browser exceptions are reported.
+- Page views and load performance - reported by your users' browsers.
+- User and session counts.
+- Performance counters from your Windows or Linux server machines, such as CPU, memory, and network usage.
+- Host diagnostics from Docker or Azure.
+- Diagnostic trace logs from your app - so that you can correlate trace events with requests.
+- Custom events and metrics that you write yourself in the client or server code, to track business events such as items sold or games won.

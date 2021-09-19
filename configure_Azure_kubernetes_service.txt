@@ -1,0 +1,36 @@
+configure_Azure_kubernetes_service
+
+Explore the AKS terminology
+- Pools are groups of nodes with identical configurations.
+- Nodes are individual virtual machines running containerized applications.
+- Pods are a single instance of an application. A pod can contain multiple containers.
+- Container is a lightweight and portable executable image that contains software and all of its dependencies.
+- Deployment has one or more identical pods managed by Kubernetes.
+- Manifest is the YAML file describing a deployment.
+
+
+Explore the AKS cluster and node architecture
+- Azure-managed nodes
+- Customer-managed nodes
+
+
+Configure AKS networking
+- cluster IP
+- NodePort
+- LoadBalancer
+- ExternalName
+
+Configure AKS storage
+
+AKS storage
+- volumes
+    Azure disks Kubernetes DataDisk
+    Azure Files SMB3.0
+- persistent volumes
+- storage classes
+- persistent volume claims
+
+
+Configure AKS scaling
+Configure AKS scaling to Azure Container Instances
+ 

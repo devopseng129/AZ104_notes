@@ -1,0 +1,13 @@
+protect_VM_settings_Azure_ASC
+
+PowerShell DSC 
+LCM - Local Configuration Manager
+    get
+    test
+    set
+
+DSC resources
+Get-DscResource | select Name,Module,Properties
+
+push Configuration to a node
+Start-DscConfiguration -path D:\

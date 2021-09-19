@@ -1,0 +1,10 @@
+create_Win_VM
+
+resources used in a Windows VM 
+- VM - CPU and memory
+- Azure Storage account to hold VHDs
+- Virtual disks to hold the OS, applications and data 
+- VNet - connects VM with other resources or on-prem infrastructure
+- network interface - communicate with VNet
+- public IP address - access VM (optional)
+

@@ -1,0 +1,20 @@
+host_web_app_Azure_App_Service
+
+Create a web app in the Azure portal
+- Deployment slots
+
+Creation wizard
+- subscription
+- resource group
+- app name
+- publish
+- runtime stack
+- OS
+- region
+- app service plan
+
+Prepare the web application code
+
+
+Deploy code to App Service
+

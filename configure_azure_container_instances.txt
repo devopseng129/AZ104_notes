@@ -1,0 +1,9 @@
+configure_azure_container_instances
+
+docker terminology
+- container
+- container image
+- build
+- pull
+- push
+- dockerfile

@@ -1,0 +1,52 @@
+configure_vm_availability
+
+Plan for maintenance and downtime
+- unplanned hardware maintenance
+- unexpected downtime
+- planned maintenance
+
+Setup availability sets
+- availability set - logica feature - ensure that group of related VMs are deployed so that they are not subject to a SPF and not upgraded at the same time
+- general principles
+    redundancy - multiple VMs in an Av-Setup
+    configure each application tier into separate Av-Setup
+    combine Load Balancer with Av-sets
+    use managed disks with VMs
+
+Review update and fault domains
+UD - update domain - group of nodes that are upgraded together during the process of a rollout
+FD - fault domain - group of nodes that represent a physical unit of failure
+
+
+availability zones
+- unique physical locations within the Azure region
+- services
+    zonal 
+    zone-redundant 
+
+vertical and horizontal scaling
+- V - scale up/down
+- H - scale out/in
+
+
+
+scale sets
+- VM scale sets - Azure Compute resource
+- deploy and manage a set of identical VMs
+- designed to support true autoscale
+
+Create scale sets
+- initial instance count 
+- instance size
+- use managed disks
+- enabling scalling beyond 100 instances
+- spreading algorithm
+
+Configure autoscale
+- minimum number of VMs
+- maximum number of VMs
+- Scale out CPU threshold
+- number of VMs in increase step
+- Scale in CPU threshold
+- number of VMs in decrease step 
+

@@ -1,0 +1,14 @@
+manage_VMs_with_Azure_CLI
+
+Azure CLI commands
+create 	Create a new virtual machine
+deallocate 	Deallocate a virtual machine
+delete 	Delete a virtual machine
+list 	List the created virtual machines in your subscription
+open-port 	Open a specific network port for inbound traffic
+restart 	Restart a virtual machine
+show 	Get the details for a virtual machine
+start 	Start a stopped virtual machine
+stop 	Stop a running virtual machine
+update 	Update a property of a virtual machine
+
