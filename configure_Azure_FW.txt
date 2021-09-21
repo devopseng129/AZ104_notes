@@ -1,0 +1,48 @@
+configure_Azure_FW
+
+
+Determine Azure Firewall uses
+- Built-in high availability. High availability is built in, so additional load balancers aren't required. There's nothing you need to configure.
+- Availability Zones. Azure Firewall can be configured during deployment to span multiple Availability Zones for increased availability.
+- Unrestricted cloud scalability. Azure Firewall can scale up as much as you need to accommodate changing network traffic flows, so you don't need to budget for your peak traffic.
+- Application FQDN filtering rules. You can limit outbound HTTP/S traffic or Azure SQL traffic to a specified list of fully qualified domain names (FQDN) including wild cards.
+- Network traffic filtering rules. You can centrally create allow or deny network filtering rules by source and destination IP address, port, and protocol. Azure Firewall is fully stateful, so it can distinguish legitimate packets for different types of connections. Rules are enforced and logged across multiple subscriptions and virtual networks.
+- Threat intelligence. Threat intelligence-based filtering can be enabled for your firewall to alert and deny traffic from/to known malicious IP addresses and domains. The IP addresses and domains are sourced from the Microsoft Threat Intelligence feed.
+- Multiple public IP addresses. You can associate multiple public IP addresses (up to 100) with your firewall.
+
+Create Azure Firewalls
+- hub-spoke network topology
+
+
+Create firewall rules
+ - NAT rules - Azure Firewall Destination Network Address Translation (DNAT) 
+    Name: A label for the rule.
+    Protocol: TCP or UDP.
+    Source Address: * (Internet), a specific Internet address, or a CIDR block.
+    Destination Address: The external address of the firewall that the rule will inspect.
+    Destination Ports: The TCP or UDP ports that the rule will listen to on the external IP address of the firewall.
+    Translated Address: The IP address of the service (virtual machine, internal load balancer, and so on) that privately hosts or presents the service.
+    Translated Port: The port that the inbound traffic will be routed to by the Azure Firewall.
+
+ - Network rules
+     Name: A friendly label for the rule.
+    Protocol: TCP, UDP, ICMP (ping and traceroute) or Any.
+    Source Address: The address or CIDR block of the source.
+    Destination Addresses: The addresses or CIDR blocks of the destination(s).
+    Destination Ports: The destination port of the traffic.
+
+ - Application rules - define fully qualified domain names (FQDNs) that can be accessed from a subnet
+    Name: A friendly label for the rule.
+    Source Addresses: The IP address of the source.
+    Protocol:Port: HTTP/HTTPS and the port that the web server is listening on.
+    Target FQDNs: The domain name of the service, such as www.contoso.com. Wildcards can be used. An FQDN tag represents a group of FQDNs associated with well known Microsoft services. Example FQDN tags include Windows Update, App Service Environment, and Azure Backup.
+
+
+ - Rule processing ORRDER
+    Network Rules
+    Application Rules (network and application)
+
+
+
+
+https://docs.microsoft.com/en-us/azure/firewall/

@@ -1,0 +1,33 @@
+configure_VNet_peering
+
+
+Determine virtual network peering uses
+- Regional VNet peering connects Azure virtual networks in the same region.
+- Global VNet peering connects Azure virtual networks in different regions. When creating a global peering, the peered virtual networks can exist in any Azure public cloud region or China cloud regions, but not in Government cloud regions. You can only peer virtual networks in the same region in Azure Government cloud regions.
+- benefits of virtual network peering
+    Private. Network traffic between peered virtual networks is private. Traffic between the virtual networks is kept on the Microsoft backbone network. No public Internet, gateways, or encryption is required in the communication between the virtual networks.
+    Performance. A low-latency, high-bandwidth connection between resources in different virtual networks.
+    Communication. The ability for resources in one virtual network to communicate with resources in a different virtual network, once the virtual networks are peered.
+    Seamless. The ability to transfer data across Azure subscriptions, deployment models, and across Azure regions.
+    No disruption. No downtime to resources in either virtual network when creating the peering, or after the peering is created.
+
+
+
+Determine gateway transit and connectivity
+
+
+
+Create virtual network peering
+- Steps
+    Create two virtual networks.
+    Peer the virtual networks.
+    Create virtual machines in each virtual network.
+    Test the communication between the virtual machines.
+
+
+
+Determine service chaining uses
+- peering status
+    Initiated: When you create the peering to the second virtual network from the first virtual network, the peering status is Initiated.
+    Connected: When you create the peering from the second virtual network to the first virtual network, its peering status is Connected. 
+

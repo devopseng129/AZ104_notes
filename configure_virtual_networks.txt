@@ -1,0 +1,46 @@
+configure_virtual_networks
+
+Plan virtual networks
+- VNet - a representation of your own network in the cloud
+- Each VNet you create has its own CIDR block and can be linked to other VNets and on-premises networks if the CIDR blocks do not overlap
+- usage
+     dedicated private cloud-only VNet
+     Securely extend your data center With VNets (S2S-VPN-IPSEC)
+     Enable hybrid cloud scenarios.
+
+Create subnets
+- provide logical divisions within your network.
+- Classless Inter-Domain Routing (CIDR) notation
+- 5 restricted addresses in Azure
+    x.x.x.0: Network address
+    x.x.x.1: Reserved by Azure for the default gateway
+    x.x.x.2, x.x.x.3: Reserved by Azure to map the Azure DNS IPs to the VNet space
+    x.x.x.255: Network broadcast address
+
+Plan IP addressing
+    Private IP addresses: Used for communication within an Azure virtual network (VNet), and your on-premises network, when you use a VPN gateway or ExpressRoute circuit to extend your network to Azure.
+    Public IP addresses: Used for communication with the Internet, including Azure public-facing services.
+    Static addressing usage
+        DNS name resolution, where a change in the IP address would require updating host records.
+        IP address-based security models that require apps or services to have a static IP address.
+        TSL/SSL certificates linked to an IP address.
+        Firewall rules that allow or deny traffic using IP address ranges.
+        Role-based VMs such as Domain Controllers and DNS servers.
+
+
+Create public IP addressing
+- IP version
+- SKU
+- name
+- IP address assignment
+    dynamic
+    static
+
+Associate public IP addresses
+VM -> NIC
+LoadBalancer -> front-end configuration
+VPN gateway -> Gateway IP configuration
+Application Gateway -> front-end configuration
+
+
+

@@ -1,0 +1,69 @@
+manage_traffic_flow_with_routes
+
+Identify routing capabilities of an Azure virtual network
+
+The Next hop type column shows the network path taken by traffic sent to each address prefix. The path can be one of the following hop types:
+
+    Virtual network: A route is created in the address prefix. The prefix represents each address range created at the virtual-network level. If multiple address ranges are specified, multiple routes are created for each address range.
+    Internet: The default system route 0.0.0.0/0 routes any address range to the internet, unless you override Azure's default route with a custom route.
+    None: Any traffic routed to this hop type is dropped and doesn't get routed outside the subnet. By default, the following IPv4 private-address prefixes are created: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16. The prefix 100.64.0.0/10 for a shared address space is also added. None of these address ranges are globally routable.
+
+Within Azure, there are additional system routes. Azure will create these routes if the following capabilities are enabled:
+
+    Virtual network peering
+    Service chaining
+    Virtual network gateway
+    Virtual network service endpoint
+
+When creating user-defined routes, you can specify these next hop types:
+
+    Virtual appliance: A virtual appliance is typically a firewall device used to analyze or filter traffic that is entering or leaving your network. You can specify the private IP address of a NIC attached to a virtual machine so that IP forwarding can be enabled. Or you can provide the private IP address of an internal load balancer.
+    Virtual network gateway: Use to indicate when you want routes for a specific address to be routed to a virtual network gateway. The virtual network gateway is specified as a VPN for the next hop type.
+    Virtual network: Use to override the default system route within a virtual network.
+    Internet: Use to route traffic to a specified address prefix that is routed to the internet.
+    None: Use to drop traffic sent to a specified address prefix.
+
+Route selection and priority
+
+If multiple routes are available in a route table, Azure uses the route with the longest prefix match
+If multiple routes share the same address prefix, Azure selects the route based on its type in the following order of priority:
+
+    User-defined routes
+    BGP routes
+    System routes
+
+
+
+
+What is an NVA?
+A network virtual appliance (NVA) is a virtual appliance that consists of various layers like:
+
+    a firewall
+    a WAN optimizer
+    application-delivery controllers
+    routers
+    load balancers
+    IDS/IPS
+    proxies
+
+Network virtual appliance
+
+Network virtual appliances or NVAs are virtual machines that control the flow of network traffic by controlling routing. You typically use them to manage traffic flowing from a perimeter-network environment to other networks or subnets.
+
+An NVA often includes various protection layers like:
+
+    a firewall
+    a WAN optimizer
+    application-delivery controllers
+    routers
+    load balancers
+    proxies
+    an SD-WAN edge
+
+
+
+
+
+
+
+

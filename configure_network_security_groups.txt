@@ -1,0 +1,31 @@
+configure_network_security_groups
+
+
+Implement network security groups
+- NSG
+- subnets
+- network interfaces
+- associations
+
+Determine network security group rules
+- filter the type of network traffic that can flow in and out of virtual network subnets and network interfaces
+- specifying:
+    Name
+    Priority
+    Port
+    Protocol (Any, TCP, UDP)
+    Source (Any, IP Addresses, Service tag)
+    Destination (Any, IP Addresses, Virtual Network)
+    Action (Allow or Deny)
+- inbound rules
+- outbound rules
+
+
+Determine network security group effective rules
+- service 
+- port ranges
+- Priority (lower number == higher priority)
+
+
+Create network security group rules
+ 

@@ -1,0 +1,48 @@
+design_IP_addressing_schema
+
+
+Network IP addressing and integration
+- on-prem addressing
+    routers
+    firewalls
+    switches
+    network segmentation
+
+There are three ranges of non-routable IP addresses that are designed for internal networks that won't be sent over internet routers:
+
+    10.0.0.0 to 10.255.255.255
+    172.16.0.0 to 172.31.255.255
+    192.168.0.1 to 192.168.255.255
+
+- Azure addressing
+    VNets
+    Subnets
+    NSGs
+    firewalls
+    Load Balancers
+
+
+
+
+Public and private IP addressing in Azure
+IP address types
+
+There are two types of IP addresses that you can use in Azure:
+
+    Public IP addresses 
+    Private IP addresses
+
+Both types of IP addresses can be allocated in one of two ways:
+
+    Dynamic
+    Static
+
+In Azure virtual networks, IP addresses can be allocated to the following types of resources:
+
+    Virtual machine network interfaces
+    Load balancers
+    Application gateways
+
+
+
+Plan IP addressing for your networks

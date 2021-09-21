@@ -1,0 +1,17 @@
+distribute_services_across_Azure_VNets_integrate_VNet_peering 
+
+
+Connect services by using virtual network peering
+2 types
+    Virtual network peering connects virtual networks in the same Azure region, such as two virtual networks in North Europe.
+    Global virtual network peering connects virtual networks that are in different Azure regions, such as a virtual network in North Europe and a virtual network in West Europe.
+
+IP address spaces of connected networks within Azure and between Azure and your on-premises system can't overlap
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+configure_Azure_DNS
+
+
+Identify domains and custom domains
+- initial domain name
+- custom domain name 
+
+
+Create Azure DNS zones
+- DNS service to manage and resolve domain names in a virtual network without needing to add a custom DNS solution
+
+
+
+Delegate DNS domains
+- registrar - third party domain registrar. This is the company where you registered your domain.

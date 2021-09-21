@@ -1,0 +1,59 @@
+configure_VPN_gateway
+
+
+Determine VPN gateway uses
+- Each virtual network can have only one VPN gateway
+
+    Site-to-site connections connect on-premises datacenters to Azure virtual networks
+    VNet-to-VNet connections connect Azure virtual networks (custom)
+    Point-to-site (User VPN) connections connect individual devices to Azure virtual networks
+
+
+
+Create site-to-site connections
+- Create VNets and subnets.
+- Specify the DNS server (optional)
+
+
+Create the gateway subnet
+
+
+
+Create the VPN gateway
+- gateway type
+- VPN type
+- SKU
+- generation
+- VNets
+
+
+Determine the VPN gateway type
+- route-based VPN
+- policy-based VPN
+
+
+Determine gateway SKU and generation
+
+
+
+Create the local network gateway
+- name
+- endpoint
+- IP address
+- address space
+
+
+Setup the on-premises VPN gateway
+
+
+
+Create the VPN connection
+- name
+- connection type
+- shared key PSK
+
+
+
+Determine high availability scenarios
+- active/standby (automatic failover)
+- active/active
