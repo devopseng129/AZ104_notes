@@ -1,0 +1,43 @@
+configure_Azure_alerts
+
+
+Manage Azure Monitor alerts
+- You can alert on metrics and logs as described in monitoring data sources. These include but are not limited to:
+    Metric values
+    Log search queries
+    Activity Log events
+    Health of the underlying Azure platform
+    Tests for web site availability
+
+
+Alert states
+New --> The issue has been detected and has not yet been reviewed.
+Acknowledged --> An administrator has reviewed the alert and started working on it.
+Closed --> The issue has been resolved. After an alert has been closed, you can reopen it by changing it to another state.
+
+
+
+Create alert rules
+- Alerts only fire when enabled. The key attributes of an alert rule are:
+    target resource
+    signal
+    criteria
+    alert name
+    alert description
+    severity
+    action
+
+
+
+Create action groups
+- Notifications configure the method in which users will be notified when the action group triggers.
+    Email Azure Resource Manager role
+    Email/SMS message/Push/Voice
+
+- Actions
+    Automation runbook
+    Azure Function
+    ITSM
+    Logic App
+    Webhook
+

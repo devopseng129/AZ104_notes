@@ -1,0 +1,21 @@
+configure_network_watcher
+
+Describe Network Watcher features
+- Automate remote network monitoring with packet capture
+- Gain insight into your network traffic using flow logs.
+- Diagnose VPN connectivity issues
+- Verify IP Flow
+- Next Hop
+- VPN Diagnostics
+- NSG Flow Logs
+- Connection Troubleshoot
+
+Review flow verify diagnostics
+IP Flow Verify is ideal for making sure security rules are being correctly applied. When used for troubleshooting, if IP Flow Verify doesn’t show a problem, you will need to explore other areas such as firewall restrictions.
+
+Review next hop diagnostics
+determine if traffic is being directed to the intended destination. Next hop information will help determine if network routing is correctly configured.
+
+Visualize the network topology
+generate a visual diagram of the resources in a virtual network, and the relationships between the resources
+

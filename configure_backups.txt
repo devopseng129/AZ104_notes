@@ -1,0 +1,26 @@
+configure_backups
+
+Describe Azure backup benefits
+    Offload on-premises backup
+    Back up Azure IaaS VMs
+    Get unlimited data transfer
+    Keep data secure
+    Get app-consistent backups
+    Retain short and long-term data
+    Automatic storage management
+    Multiple storage options
+        Locally redundant storage (LRS) replicates your data three times (it creates three copies of your data) in a storage scale unit in a datacenter. All copies of the data exist within the same region. LRS is a low-cost option for protecting your data from local hardware failures.
+        Geo-redundant storage (GRS) 
+
+
+Configure on-premises file and folder backups
+    Create the recovery services vault. 
+    Download the agent and credential
+    Install and register agent.
+    Configure the backup
+
+Manage the Azure recovery services agent
+Azure Backup for files and folders relies on the Microsoft Azure Recovery Services (MARS) agent to be installed on the Window client or server.
+
+
+

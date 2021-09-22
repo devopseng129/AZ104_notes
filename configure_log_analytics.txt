@@ -1,0 +1,70 @@
+configure_log_analytics
+
+Determine Log Analytics uses
+
+
+
+Create a workspace
+To get started with Log Analytics you need to add a workspace.
+    Provide a name for the new Log Analytics workspace.
+    Select a Subscription from the drop-down list.
+    For Resource Group, select an existing resource group that contains one or more Azure virtual machines.
+    Select the Location your VMs are deployed to.
+    The workspace will automatically use the Per GB pricing plan.
+
+
+
+Define connected sources
+Connected Sources are the computers and other resources that generate data collected by Log Analytics
+
+
+
+
+Define data sources
+- Data sources include:
+    Windows Event Logs
+    Windows Performance Counters
+    Linux Performance Counters
+    IIS Logs
+    Custom Fields
+    Custom Logs
+    Syslog
+
+
+Visualize Log Analytics data
+- Some common query tables are:
+    Event
+    Syslog
+    Heartbeat
+    Alert
+
+Structure Log Analytics queries
+
+- Example  query that returns a count of the top 10 errors in the Event log during the last day. The results are in descending order
+Event
+| where (EventLevelName == "Error")
+| where (TimeGenerated &gt; ago(1day))
+| summarize ErrorCount = count() by Computer 
+| top ErrorCount desc 
+
+
+Commont operators
+- count
+StormEvents | count
+
+- limit
+T | limit 5
+
+- summarize
+T | summarize count(), avg(price) by fruit, supplier
+
+- top
+T | top 5 by Name desc nulls last
+
+- where
+T | where fruit=="apple"
+
+
+
+
+

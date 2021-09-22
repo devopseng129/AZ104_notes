@@ -1,0 +1,36 @@
+configure_VM_backups
+
+
+Protect virtual machine data
+- backup options
+    Azure Backup backing up Azure VMs running production workloads
+    Azure Site Recovery  protects your VMs from a major disaster scenario when a whole region experiences an outage due to major natural disaster or widespread service interruption
+    Managed disk snapshots provide a quick and simple option for backing up VMs that use Managed Disks
+
+
+
+Create virtual machine snapshots
+- An Azure backup job consists of two phases
+    First, a virtual machine snapshot is taken
+    Second, the virtual machine snapshot is transferred to the Azure Recovery Services vault.
+
+
+
+Backup virtual machines
+- Backing up Azure virtual machines using Azure Backup is easy and follows a simple process.
+    Create a recovery services vault
+    Use the Portal to define the backup
+    Backup the virtual machine
+
+
+Implement Azure Backup Server
+- Backup steps
+    Install the DPM or MABS protection agent on machines you want to protect. You then add the machines to a DPM protection group.
+    To protect on-premises machines, the DPM or MABS server must be located on-premises.
+    To protect Azure VMs, the MABS server must be located in Azure, running as an Azure VM.
+    With DPM/MABS, you can protect backup volumes, shares, files, and folders. You can also protect a machine's system state (bare metal), and you can protect specific apps with app-aware backup settings.
+    When you set up protection for a machine or app in DPM/MABS, you select to back up to the MABS/DPM local disk for short-term storage and to Azure for online protection. You also specify when the backup to local DPM/MABS storage should run and when the online backup to Azure should run.
+    The disk of the protected workload is backed up to the local MABS/DPM disks, according to the schedule you specified.
+    The DPM/MABS disks are backed up to the vault by the MARS agent that's running on the DPM/MABS server.
+
+

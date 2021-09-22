@@ -1,0 +1,78 @@
+incident_response_with_alerting_on_Azure
+
+
+Explore the different alert types that Azure Monitor supports
+- three signal types that you can use to monitor your environment
+    metric
+    activity
+    log
+
+- composition of an alert rule
+    RESOURCE
+    CONDITION
+    ACTIONS
+    ALERT DETAILS
+
+    The five severity levels are:
+    0: Critical
+    1: Error
+    2: Warning
+    3: Informational
+    4: Verbose
+
+- filter alerts
+    smart groups
+    resource types
+    resource
+    severity
+    monitor condition 
+    alert state
+
+Use log alerts to alert on events in your application
+- capture important information from log files. These log files can be created by applications, operating systems, other hardware, or Azure services.
+
+Composition of log search rules
+- Every log alert has an associated search rule. The composition of these rules is:
+    Log query: Query that runs every time the alert rule fires.
+    Time period: Time range for the query.
+    Frequency: How often the query should run.
+    Threshold: Trigger point for an alert to be created.
+
+
+
+Use activity log alerts to alert on events within your Azure infrastructure
+- be notified when a specific event happens on some Azure resource
+
+- There are two types of activity log alerts:
+    Specific operations: Apply to resources within your Azure subscription, and often have a scope with specific resources or a resource group. You use this type when you need to receive an alert that reports a change to an aspect of your subscription. For example, you can receive an alert if a VM is deleted or new roles are assigned to a user.
+    Service health events: Include notice of incidents and maintenance of target resources.
+
+- activity log alerts attributes
+    category
+    scope
+    resource group
+    resource type
+    operation name
+    level
+    status
+    event initiated by
+
+- perform actions when alert happens
+    Send an email.
+    Send an SMS message.
+    Create an Azure app push notification.
+    Make a voice call to a number.
+    Call an Azure function.
+    Trigger a logic app.
+    Send a notification to a webhook.
+    Create an ITSM ticket.
+    Use a runbook (to restart a VM, or scale a VM up or down).
+
+
+Use smart groups to reduce alert noise in Azure Monitor
+- Smart groups are an automatic feature of Azure Monitor. By using machine learning algorithms, Azure Monitor joins alerts based on repeat occurrence or similarity. Smart groups enable you to address a group of alerts instead of each alert individually.
+- smart group state
+    new
+    acknowledged
+    closed
+

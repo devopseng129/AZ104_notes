@@ -1,0 +1,54 @@
+configure_Azure_Monitor
+
+Describe Azure Monitor key capabilities
+- monitor and visualize metrics
+- query and analyze logs
+- setup alerts and actions
+
+Define metrics and logs
+    Metrics are numerical values that describe some aspect of a system at a particular point in time. They are lightweight and capable of supporting near real-time scenarios.
+    Logs contain different kinds of data organized into records with different sets of properties for each type. Data such as events and traces are stored as logs in addition to performance data so that it can all be combined for analysis.
+
+
+
+Identify data types
+- Azure Monitor collects data from each of the following tiers:
+    Application monitoring data: Data about the performance and functionality of the code you have written, regardless of its platform.
+    Guest OS monitoring data: Data about the operating system on which your application is running. The application could be running in Azure, another cloud, or on-premises.
+    Azure resource monitoring data: Data about the operation of an Azure resource.
+    Azure subscription monitoring data: Data about the operation and management of an Azure subscription, as well as data about the health and operation of Azure itself.
+    Azure tenant monitoring data: Data about the operation of tenant-level Azure services, such as Azure Active Directory.
+
+
+Describe activity log events
+- The Azure Activity Log is a subscription log that provides insight into subscription-level events that have occurred in Azure. 
+- Through activity logs, you can determine:
+    What operations were taken on the resources in your subscription?
+    Who started the operation?
+    When the operation occurred?
+    The status of the operation.
+    The values of other properties that might help you research the operation.
+
+
+
+Query the activity logfilter your Activity Log.
+    Subscription
+    Timespan
+    Event Severity
+    Resource group
+    Resource (name)
+    Resource type
+    Operation name
+    Event initiated by
+    Search
+
+Event categories
+- administrative
+- service health
+- resource health
+- alert
+- autoscale
+- recommendation
+- security
+- policy
+
